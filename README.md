@@ -2,7 +2,7 @@
 
 
 
-Gif Walkthrough : https://imgur.com/a/9oj53dT
+Gif Walkthrough : https://imgur.com/a/0vhnAuF
 
 Required Features
 Users can see an app icon in the home screen and a styled launch screen.
