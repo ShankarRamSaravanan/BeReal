@@ -2,7 +2,7 @@
 
 
 
-Gif Walkthrough : https://imgur.com/a/0vhnAuF
+Gif Walkthrough : https://imgur.com/a/I2s43BW
 
 Required Features:
 
