@@ -11,6 +11,7 @@ import ParseSwift
 
 struct User: ParseUser {
     // These are required by `ParseObject`.
+    var lastPostedDate: Date?
     var objectId: String?
     var createdAt: Date?
     var updatedAt: Date?

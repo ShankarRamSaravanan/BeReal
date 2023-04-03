@@ -11,11 +11,15 @@ import AlamofireImage
 
 class PostCell: UITableViewCell {
 
+    
+    
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var postImageView: UIImageView!
-    @IBOutlet weak var usernameLabel: UILabel!
-    
+    @IBOutlet weak var blurView: UIVisualEffectView!
     
     private var imageDataRequest: DataRequest?
     func configure(with post: Post) {
@@ -43,11 +47,12 @@ class PostCell: UITableViewCell {
 
         // Caption
         captionLabel.text = post.caption
+        
+        if let date = post.createdAt {
+                    dateLabel.text = DateFormatter.postFormatter.string(from: date)
+                }
 
         // Date
-        if let date = post.createdAt {
-            dateLabel.text = DateFormatter.postFormatter.string(from: date)
-        }
     }
     override func prepareForReuse() {
         super.prepareForReuse()
