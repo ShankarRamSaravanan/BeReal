@@ -4,22 +4,10 @@
 
 Gif Walkthrough : https://imgur.com/a/0vhnAuF
 
-Required Features
-Users can see an app icon in the home screen and a styled launch screen.
-
-Users can sign up to create a new account.
-
-Users can login to an existing account.
-
-Users can able to persist their login credentials on multiple app launches
-
-Users can able to logout
-
-Users can take an existing photo from their photos library and upload it with an optional caption.
-
-Users can view the most recent 10 photos, starting from the most recent photo.
+Required Features:
 
 
+Users are able to use the back camera to take a photo and upload it to the server OR user uploads unique photo from photo album
 
-
-Cannot perfom one required feature which is displaying the image in the feed. I couldnot display the image in the feed viewcontroller.
+Users are not able to see other users’ photos until they upload their own.
+Fetch the 10 most recent photos within the last 24 hours from the server. - Of those returned in the response, only show the post if the createdAt property is within 24 hours of the logged in user’s last post. - You can either obstruct the photo (see blurred photo in stretch goals) or just not show it to the user.
